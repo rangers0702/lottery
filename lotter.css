@@ -1,0 +1,160 @@
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Subheading Styling */
+h2 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(145deg, #6cbd45, #4caf50);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: linear-gradient(145deg, #45a049, #387a34);
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Participants List Styling */
+.participants ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.participants li {
+    padding: 12px;
+    background-color: #f9f9f9;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.participants li:hover {
+    transform: translateX(10px); /* Slide effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Winner Information Styling */
+#winnerInfo {
+    font-size: 22px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: color 0.3s ease;
+}
+
+#winnerInfo:hover {
+    color: #c0392b; /* Slightly darker red on hover */
+}
+
+/* Status Message Styling */
+#status {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .participants li {
+        font-size: 14px;
+    }
+
+    #winnerInfo {
+        font-size: 18px;
+    }
+}
+/* Style for the Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4caf50;
+    background-color: #f0f8ff;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
