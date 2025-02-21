@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Lottery</title>
+    <link rel="stylesheet" href="new2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Simple Lottery 🎉</h1>
+        
+        <!-- Status and Loading Message -->
+        <div id="status"></div>
+
+        <!-- Lottery Entry Section -->
+        <div class="entry-form">
+            <h2>💰 Enter the Lottery</h2>
+            <p>Enter for a chance to win 0.1 ETH. Please enter your Ethereum address:</p>
+            
+            <!-- Input Field for Ethereum Address -->
+            <label for="userAddress">Ethereum Address:</label>
+            <input type="text" id="userAddress" placeholder="0x1234...abcd" />
+            
+            <!-- Button to Enter the Lottery -->
+            <button id="enterLotteryBtn">Enter for 0.1 ETH</button>
+        </div>
+
+        <!-- Participants Section -->
+        <div class="participants">
+            <h2>👥 Current Participants</h2>
+            <ul id="participantsList"></ul>
+        </div>
+
+        <!-- Winner Section -->
+        <div class="winner-section">
+            <h2>🏆 Pick a Winner</h2>
+            <button id="pickWinnerBtn">Pick Winner</button>
+            <div id="winnerInfo"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="new3.js"></script>
+</body>
+</html>
